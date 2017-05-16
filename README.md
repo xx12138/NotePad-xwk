@@ -26,7 +26,7 @@ relativeLayout ImageView图片 TextView标题 TextView时间 relativeLayout效�
 RelativeLayout  SearchView 搜索框  ListView笔记列表  RelativeLayout 整体的效果是这样的:</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/1.png)</br></br>
 
-接下来是search搜索功能，当我们点击搜索图标的时候就可以输入文字，效果如下:</br>
+2.接下来是search搜索功能，当我们点击搜索图标的时候就可以输入文字，效果如下:</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/3.png)</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/4.png)</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/5.png)</br>
@@ -40,9 +40,9 @@ public boolean onQueryTextChange(String queryText) {</br>
     adapter.swapCursor(cursor); // 交换指针，展示新的数据</br>
     return true;</br>
 }</br>
-先使用like找到我们查询的内容，在改变指针，交换adapter的指针就可以查询数据了。用系统自带的searchview实现搜索功能比较方便</br>
-</br>
-对UI稍微美化了一下，就是为searchview增加一个圆角边框，增加了一个笔记的icon还有listview的隔行变色效果</br>
+先使用like找到我们查询的内容，在改变指针，交换adapter的指针就可以查询数据了。用系统自带的searchview实现搜索功能比较方便。</br>
+</br></br>
+3.对UI稍微美化了一下，就是为searchview增加一个圆角边框，增加了一个笔记的icon还有listview的隔行变色效果</br>
 只要把下面这段代码放在生成cursorAdapter的后面就可以实现隔行变色的效果</br>
 {</br>
 @Override</br>
@@ -60,6 +60,21 @@ View view = super.getView(position, convertView, parent);</br>
 }</br>
 整体效果:</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/1.png)</br>
+4.切换背景的功能</br>
+我使用一个AlertDialog，用自定义view显示出几个button，首先要定义一个menu，在顶端actionbar上面显示用来弹出切换背景功能的按钮</br>
+在onCreateOptionsMenu中注册menu:inflater.inflate(R.menu.changeback_menu, menu);</br>
+然后添加点击事件:</br>
+public boolean onOptionsItemSelected(MenuItem item) {</br>
+    switch (item.getItemId()) {</br>
+    case R.id.changeback:</br>
+    LayoutInflater inflater = getLayoutInflater();</br>
+    View layout = inflater.inflate(R.layout.alert_changeback, null);</br>
+    final AlertDialog.Builder builder =new AlertDialog.Builder(this);</br>
+    builder.setView(layout);</br>
+    final AlertDialog aDialog=builder.create();</br>
+}</br>
+最后在为那些颜色按钮添加点击事件就可以了，可以存在数据库里面增加一张表，作为系统配置的，用来保存背景颜色,我在list和edit页面都添加了这个功能</br>
+效果:</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/6.png)</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/7.png)</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/8.png)</br>
