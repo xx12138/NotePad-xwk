@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\changeback.jpg",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\drawable\\changeback.jpg"
+    },
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_edit.png",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\drawable\\ic_menu_edit.png"
+    },
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_save.png",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\drawable\\ic_menu_save.png"
+    },
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search.jpg",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\drawable\\search.jpg"
+    },
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_search.png",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\drawable\\ic_menu_search.png"
+    },
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_revert.png",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\drawable\\ic_menu_revert.png"
+    },
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_delete.png",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\drawable\\ic_menu_delete.png"
+    },
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\app_notes.png",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\drawable\\app_notes.png"
+    },
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_compose.png",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\drawable\\ic_menu_compose.png"
+    },
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\live_folder_notes.png",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\drawable\\live_folder_notes.png"
+    },
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_change.png",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\drawable\\ic_menu_change.png"
+    }
+]

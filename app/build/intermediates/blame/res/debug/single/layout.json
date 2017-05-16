@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\layout\\noteslist_item.xml",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\layout\\noteslist_item.xml"
+    },
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notelist.xml",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\layout\\notelist.xml"
+    },
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\layout\\title_editor.xml",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\layout\\title_editor.xml"
+    },
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alert_changeback.xml",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\layout\\alert_changeback.xml"
+    },
+    {
+        "merged": "E:\\androidstudio\\project\\NotePad-xwk\\app\\build\\intermediates\\res\\merged\\debug\\layout\\note_editor.xml",
+        "source": "E:\\androidstudio\\project\\NotePad-xwk\\app\\src\\main\\res\\layout\\note_editor.xml"
+    }
+]

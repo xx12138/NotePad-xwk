@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="xhdpi"
+    format="8"
+    plugin-version="2.2.2"
+    timestamp="16824938635664"
+    token="-7166360238951364900"
+    verifier="COLD_SWAP_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="500" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="66" />
+    <task
+        name="verifier"
+        duration="9" />
+
+    <artifact
+        location="E:\androidstudio\project\NotePad-xwk\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+        type="DEX" />
+
+    <build
+        timestamp="15549913569580"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="E:\androidstudio\project\NotePad-xwk\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="16653467879428"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="E:\androidstudio\project\NotePad-xwk\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+    <build
+        timestamp="16824938635664"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="E:\androidstudio\project\NotePad-xwk\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>
