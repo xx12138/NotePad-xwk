@@ -18,23 +18,15 @@ if (values.containsKey(NotePad.Notes.COLUMN_NAME_CREATE_DATE) == false) {</br>
     values.put(NotePad.Notes.COLUMN_NAME_CREATE_DATE, re_StrTime);</br>
 }</br>
 保存的时候就直接用系统的把时间戳转化为字符串的函数进行转化后保存。</br>
-我用重新定义了一个textview用来放时间</br>
- <TextView</br>
-        android:id="@+id/note_date"</br>
-        android:layout_width="wrap_content"</br>
-        android:layout_height="wrap_content"</br>
-        android:layout_alignParentRight="true"</br>
-        android:paddingLeft="5dip"</br>
-        android:layout_alignParentBottom="true"</br>
-        android:textSize="20px"</br>
-        android:singleLine="true"</br>
-        /></br>
+我重新定义了一个textview用来放时间</br>
 这和原来的title是放在一个relativeLayout里面的，还有前面的ImageView控件,都放在notelist_item里面。note_list布局大概如下:</br>
-<relativeLayout><ImageView/>icon<TextView/>title<TextView/>time</relativeLayout>效果:</br>
+relativeLayout ImageView这里放图片 TextView 这里放标题 TextView  这里放时间 relativeLayout效果:</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/2.png)</br>
 我重新定义了一个布局用来显示NoteList，大致是这样的:</br>
-<RelativeLayout><SearchView/>搜索框<ListView/>笔记列表</RelativeLayout>整体的效果是这样的:</br>
-![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/1.png)</br>
+RelativeLayout  SearchView 搜索框  ListView笔记列表  RelativeLayout 整体的效果是这样的:</br>
+![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/1.png)</br></br>
+
+接下来是search搜索功能，效果如下:
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/3.png)</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/4.png)</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/5.png)</br>
