@@ -12,16 +12,16 @@ public void onCreate(SQLiteDatabase db) {
                    + NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE + " TEXT"
                    + ");");
        }
-```</br>
-这里我在生成数据库的时候就定义成text字符串类型的数据。</br>
+```
+</br>这里我在生成数据库的时候就定义成text字符串类型的数据。</br>
 ```
 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 String re_StrTime = sdf.format(System.currentTimeMillis());</br>
 if (values.containsKey(NotePad.Notes.COLUMN_NAME_CREATE_DATE) == false) {
     values.put(NotePad.Notes.COLUMN_NAME_CREATE_DATE, re_StrTime);
 }
-```</br>
-保存的时候就直接用系统的把时间戳转化为字符串的函数进行转化后保存。</br>
+```
+</br>保存的时候就直接用系统的把时间戳转化为字符串的函数进行转化后保存。</br>
 我重新定义了一个textview用来放时间</br>
 这和原来的title是放在一个relativeLayout里面的，还有前面的ImageView控件,都放在notelist_item里面。note_list的项的布局大概如下:</br>
 ```
@@ -60,8 +60,7 @@ if (values.containsKey(NotePad.Notes.COLUMN_NAME_CREATE_DATE) == false) {
         />
 </RelativeLayout>
 ```
-</br>
-![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/2.png)</br>
+</br>![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/2.png)</br>
 我重新定义了一个布局用来显示NoteList，这样的:</br>
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -86,8 +85,8 @@ if (values.containsKey(NotePad.Notes.COLUMN_NAME_CREATE_DATE) == false) {
         android:layout_below="@+id/searchview"/>
 
 </RelativeLayout>
-```</br>
-整体的效果是这样的:</br>
+```
+</br>整体的效果是这样的:</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/1.png)</br></br>
 
 2.接下来是search搜索功能，当我们点击搜索图标的时候就可以输入文字，效果如下:</br>
@@ -136,8 +135,8 @@ final SearchView mSearchView = (SearchView)findViewById(R.id.searchview);
                 }
                 return true;
             }
-```</br>
-先使用like找到我们查询的内容，在改变指针，交换adapter的指针就可以查询数据了。用系统自带的searchview实现搜索功能比较方便。</br>
+```
+</br>先使用like找到我们查询的内容，在改变指针，交换adapter的指针就可以查询数据了。用系统自带的searchview实现搜索功能比较方便。</br>
 </br></br>
 3.对UI稍微美化了一下，就是为searchview增加一个圆角边框，增加了一个笔记的icon还有listview的隔行变色效果</br>
 只要把下面这段代码放在生成cursorAdapter的后面就可以实现隔行变色的效果</br>
@@ -161,8 +160,8 @@ final SearchView mSearchView = (SearchView)findViewById(R.id.searchview);
                 return view;
             }
         };
-```</br>
-整体效果:</br>
+```
+</br>整体效果:</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/1.png)</br>
 4.切换背景的功能</br>
 我使用一个AlertDialog，用自定义view显示出几个button，首先要定义一个menu，在顶端actionbar上面显示用来弹出切换背景功能的按钮</br>
@@ -178,8 +177,8 @@ public boolean onOptionsItemSelected(MenuItem item) {
     builder.setView(layout);
     final AlertDialog aDialog=builder.create();
 }
-```</br>
-最后在为那些颜色按钮添加点击事件就可以了，可以存在数据库里面增加一张表，作为系统配置的，用来保存背景颜色,我在list和edit页面都添加了这个功能</br>
+```
+</br>最后在为那些颜色按钮添加点击事件就可以了，可以存在数据库里面增加一张表，作为系统配置的，用来保存背景颜色,我在list和edit页面都添加了这个功能</br>
 效果:</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/6.png)</br>
 ![image](https://github.com/xx12138/NotePad-xwk/blob/master/images/7.png)</br>
